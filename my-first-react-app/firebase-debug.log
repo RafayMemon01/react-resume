@@ -1,0 +1,41 @@
+[debug] [2023-08-25T16:01:54.783Z] ----------------------------------------------------------------------
+[debug] [2023-08-25T16:01:54.786Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DENZEN Computer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-25T16:01:54.786Z] CLI Version:   12.5.2
+[debug] [2023-08-25T16:01:54.787Z] Platform:      win32
+[debug] [2023-08-25T16:01:54.788Z] Node Version:  v18.17.0
+[debug] [2023-08-25T16:01:54.789Z] Time:          Fri Aug 25 2023 21:01:54 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-08-25T16:01:54.789Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-25T16:01:54.927Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-25T16:01:54.928Z] > authorizing via signed-in user (rafayrashid200611@gmail.com)
+[debug] [2023-08-25T16:01:54.928Z] [iam] checking project resume-4c2fb for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-25T16:01:54.931Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/resume-4c2fb:testIamPermissions [none]
+[debug] [2023-08-25T16:01:54.932Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/resume-4c2fb:testIamPermissions x-goog-quota-user=projects/resume-4c2fb
+[debug] [2023-08-25T16:01:54.932Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/resume-4c2fb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-25T16:01:56.562Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/resume-4c2fb:testIamPermissions 200
+[debug] [2023-08-25T16:01:56.562Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/resume-4c2fb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-25T16:01:56.563Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/resume-4c2fb [none]
+[debug] [2023-08-25T16:01:58.299Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/resume-4c2fb 200
+[debug] [2023-08-25T16:01:58.300Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/resume-4c2fb {"projectId":"resume-4c2fb","projectNumber":"441777735431","displayName":"Resume","name":"projects/resume-4c2fb","resources":{"hostingSite":"resume-4c2fb"},"state":"ACTIVE","etag":"1_600ae46e-8c39-4552-9aa4-ef13c4b739b0"}
+[info] 
+[info] === Deploying to 'resume-4c2fb'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-08-25T16:01:58.312Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/resume-4c2fb/versions [none]
+[debug] [2023-08-25T16:01:58.313Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/resume-4c2fb/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-08-25T16:02:00.418Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/resume-4c2fb/versions 500
+[debug] [2023-08-25T16:02:00.418Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/resume-4c2fb/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2023-08-25T16:02:00.746Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
