@@ -1,41 +1,64 @@
-[debug] [2023-08-25T16:01:54.783Z] ----------------------------------------------------------------------
-[debug] [2023-08-25T16:01:54.786Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DENZEN Computer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2023-08-25T16:01:54.786Z] CLI Version:   12.5.2
-[debug] [2023-08-25T16:01:54.787Z] Platform:      win32
-[debug] [2023-08-25T16:01:54.788Z] Node Version:  v18.17.0
-[debug] [2023-08-25T16:01:54.789Z] Time:          Fri Aug 25 2023 21:01:54 GMT+0500 (Pakistan Standard Time)
-[debug] [2023-08-25T16:01:54.789Z] ----------------------------------------------------------------------
+[debug] [2023-08-25T16:22:50.515Z] ----------------------------------------------------------------------
+[debug] [2023-08-25T16:22:50.519Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DENZEN Computer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-25T16:22:50.520Z] CLI Version:   12.5.2
+[debug] [2023-08-25T16:22:50.520Z] Platform:      win32
+[debug] [2023-08-25T16:22:50.521Z] Node Version:  v18.17.0
+[debug] [2023-08-25T16:22:50.521Z] Time:          Fri Aug 25 2023 21:22:50 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-08-25T16:22:50.522Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-08-25T16:01:54.927Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-08-25T16:01:54.928Z] > authorizing via signed-in user (rafayrashid200611@gmail.com)
-[debug] [2023-08-25T16:01:54.928Z] [iam] checking project resume-4c2fb for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2023-08-25T16:01:54.931Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/resume-4c2fb:testIamPermissions [none]
-[debug] [2023-08-25T16:01:54.932Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/resume-4c2fb:testIamPermissions x-goog-quota-user=projects/resume-4c2fb
-[debug] [2023-08-25T16:01:54.932Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/resume-4c2fb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2023-08-25T16:01:56.562Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/resume-4c2fb:testIamPermissions 200
-[debug] [2023-08-25T16:01:56.562Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/resume-4c2fb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2023-08-25T16:01:56.563Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/resume-4c2fb [none]
-[debug] [2023-08-25T16:01:58.299Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/resume-4c2fb 200
-[debug] [2023-08-25T16:01:58.300Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/resume-4c2fb {"projectId":"resume-4c2fb","projectNumber":"441777735431","displayName":"Resume","name":"projects/resume-4c2fb","resources":{"hostingSite":"resume-4c2fb"},"state":"ACTIVE","etag":"1_600ae46e-8c39-4552-9aa4-ef13c4b739b0"}
+[debug] [2023-08-25T16:22:50.656Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-25T16:22:50.657Z] > authorizing via signed-in user (rafayrashid200611@gmail.com)
 [info] 
-[info] === Deploying to 'resume-4c2fb'...
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DENZEN Computer\OneDrive\Desktop\react-resume\my-first-react-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
 [info] 
-[info] i  deploying hosting 
-[debug] [2023-08-25T16:01:58.312Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/resume-4c2fb/versions [none]
-[debug] [2023-08-25T16:01:58.313Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/resume-4c2fb/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
-[debug] [2023-08-25T16:02:00.418Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/resume-4c2fb/versions 500
-[debug] [2023-08-25T16:02:00.418Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/resume-4c2fb/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-25T16:22:59.067Z] Using project from CLI flag: resume-4c2fb
+[debug] [2023-08-25T16:22:59.069Z] > refreshing access token with scopes: []
+[debug] [2023-08-25T16:22:59.071Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-25T16:22:59.071Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-25T16:23:00.019Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-08-25T16:23:00.019Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-25T16:23:00.034Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/resume-4c2fb [none]
+[debug] [2023-08-25T16:23:06.974Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/resume-4c2fb 200
+[debug] [2023-08-25T16:23:06.975Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/resume-4c2fb {"projectId":"resume-4c2fb","projectNumber":"441777735431","displayName":"Resume","name":"projects/resume-4c2fb","resources":{"hostingSite":"resume-4c2fb"},"state":"ACTIVE","etag":"1_600ae46e-8c39-4552-9aa4-ef13c4b739b0"}
+[info] i  Using project resume-4c2fb (Resume) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-08-25T16:23:42.796Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-08-25T16:23:43.317Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-08-25T16:23:43.318Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.0","browserURL":"https://www.gstatic.com/firebasejs/10.3.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.0/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.0/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2023-08-25T16:23:53.362Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\DENZEN Computer\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
 [error] 
-[error] Error: HTTP Error: 500, Internal error encountered.
-[debug] [2023-08-25T16:02:00.746Z] Error Context: {
-  "body": {
-    "error": {
-      "code": 500,
-      "message": "Internal error encountered.",
-      "status": "INTERNAL"
-    }
-  },
-  "response": {
-    "statusCode": 500
-  }
-}
+[error] Error: An unexpected error has occurred.
